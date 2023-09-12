@@ -1,0 +1,10 @@
+services:
+  python_3_10:
+    stdin_open: true
+    build: .
+    shm_size: '16gb'
+    container_name: 'python_3_10'
+    working_dir: '/workspace'
+    tty: true
+    volumes:
+     - ../src:/workspace

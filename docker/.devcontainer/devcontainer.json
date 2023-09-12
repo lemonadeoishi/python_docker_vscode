@@ -1,0 +1,19 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+{
+    "name": "Python_3_10",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "python_3_10",
+    "workspaceFolder": "/workspace",
+    "settings": {
+        // System
+        // "terminal.integrated.shell.linux": "/bin/bash",
+        "extensions.autoCheckUpdates": false,
+        "extensions.autoUpdate": false
+    },
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance"
+    ]
+}
