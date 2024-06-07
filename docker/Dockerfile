@@ -1,4 +1,4 @@
-FROM python:3.10.10
+FROM python:3.11.10
 
 #RUN apt-get update
 #RUN pip3 install --upgrade pip
@@ -6,4 +6,4 @@ FROM python:3.10.10
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 #RUN apt-get -y update && apt-get -y upgrade && apt-get autoremove -y
-RUN apt update && apt install -y zstd
+RUN apt update && apt install -y zstd zip
